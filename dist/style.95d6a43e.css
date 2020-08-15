@@ -30,6 +30,8 @@ ol {
 }
 
 body {
+    min-width: 100vw;
+    min-height: 100vh;
     background: #eee;
 }
 
@@ -178,4 +180,4 @@ body {
     align-items: center;
 }
 
-/*# sourceMappingURL=style.1a6f78ec.css.map */
+/*# sourceMappingURL=style.95d6a43e.css.map */
