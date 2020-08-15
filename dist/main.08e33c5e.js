@@ -172,12 +172,18 @@ window.onbeforeunload = function () {
 
 $(document).on('keypress', function (e) {
   var key = e.key;
+  var tag = e.target.tagName.toLowerCase();
+  console.log(tag);
 
   for (var i = 0; i < hashMap.length; i++) {
-    if (hashMap[i].logo.toLowerCase() === key) {
+    if (hashMap[i].logo.toLowerCase() === key && tag != 'input' && tag != 'textarea') {
       window.open(hashMap[i].url);
     }
   }
 });
+$('.searchForm').on('keypress', 'searchInput', function (e) {
+  e.stopPropagation();
+  console.log(e.stopPropagation());
+});
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.ce04f948.js.map
+//# sourceMappingURL=main.08e33c5e.js.map

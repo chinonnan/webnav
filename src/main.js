@@ -64,11 +64,19 @@ window.onbeforeunload = () => {
 
 }
 
+
 $(document).on('keypress', (e) => {
     const { key } = e;
+    let tag = e.target.tagName.toLowerCase();
+    console.log(tag)
     for (let i = 0; i < hashMap.length; i++) {
-        if (hashMap[i].logo.toLowerCase() === key) {
+        if (hashMap[i].logo.toLowerCase() === key && (tag != 'input') && (tag != 'textarea')) {
             window.open(hashMap[i].url)
         }
     }
+})
+
+$('.searchForm').on('keypress', 'searchInput', (e) => {
+    e.stopPropagation()
+    console.log(e.stopPropagation())
 })

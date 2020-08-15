@@ -48,6 +48,7 @@ body {
 .searchForm {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 @media (min-width:500px) {
@@ -59,6 +60,14 @@ body {
     }
 }
 
+.searchForm .icon-search {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
 .searchForm>input {
     width: 100%;
     height: 40px;
@@ -66,6 +75,10 @@ body {
     padding: 0 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+.searchForm>input:focus+.icon-search {
+    display: none;
 }
 
 .searchForm>button {
@@ -76,6 +89,7 @@ body {
     background: #1296db;
     color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .globalMain {
@@ -147,6 +161,10 @@ body {
     display: none;
 }
 
+.siteList .site:hover {
+    outline: 2px solid #1296db;
+}
+
 .siteList .site:hover>.close {
     display: block;
 }
@@ -154,12 +172,18 @@ body {
 .siteList .addButton {
     background: white;
     border: 1px solid #ddd;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 160px;
-    padding: 20px
+    padding: 20px;
+    cursor: pointer;
+}
+
+.siteList .addButton:hover {
+    outline: 2px solid #1296db;
 }
 
 .siteList .addButton .icon {
