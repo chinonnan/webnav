@@ -152,6 +152,9 @@ body {
 .siteList .site>.link {
     font-size: 14px;
     margin-top: 4px;
+    max-width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .siteList .site>.close {
@@ -204,4 +207,4 @@ body {
     align-items: center;
 }
 
-/*# sourceMappingURL=style.eceb8660.css.map */
+/*# sourceMappingURL=style.8d8bbcd6.css.map */
