@@ -7,6 +7,8 @@ const xObject = JSON.parse(x);
 const hashMap = xObject || [
     { logo: 'A', url: 'https://www.acfun.cn' },
     { logo: 'B', url: 'https://www.bilibili.com' },
+    { logo: 'C', url: 'https://www.ctrip.com' },
+    { logo: 'D', url: 'https://developers.weixin.qq.com' }
 ];
 
 const removeHttps = (url) => {

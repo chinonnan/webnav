@@ -128,6 +128,12 @@ var hashMap = xObject || [{
 }, {
   logo: 'B',
   url: 'https://www.bilibili.com'
+}, {
+  logo: 'C',
+  url: 'https://www.ctrip.com'
+}, {
+  logo: 'D',
+  url: 'https://developers.weixin.qq.com'
 }];
 
 var removeHttps = function removeHttps(url) {
@@ -186,4 +192,4 @@ $('.searchForm').on('keypress', 'searchInput', function (e) {
   console.log(e.stopPropagation());
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.08e33c5e.js.map
+//# sourceMappingURL=main.72f3109f.js.map
